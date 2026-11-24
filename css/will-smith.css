@@ -24,6 +24,18 @@ h3,
   font-family: Arial, serif;
 }
 
+.bio-image {
+  margin: 0 0 30px;
+}
+
+.bio-image img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
 .facts {
   border: 1px solid #d4af37;
 }
