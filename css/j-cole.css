@@ -1,0 +1,118 @@
+/* =========================================
+   j-cole.css
+   Music theme: cream and brown, like a notebook.
+   ========================================= */
+
+body {
+  background-color: #f4ecdd;
+  color: #2e2116;
+}
+
+header,
+.sub-nav,
+footer {
+  background-color: #2e2116;
+  color: #f4ecdd;
+}
+
+header a,
+.sub-nav a,
+footer a {
+  color: #f4ecdd;
+}
+
+/* Titles with a typewriter font */
+.logo,
+h1,
+h2,
+h3 {
+  font-family: "Courier New", monospace;
+}
+
+header .logo,
+footer h3,
+nav .active {
+  color: #e0a56b;
+}
+
+.facts {
+  border: 2px dashed #7a6450;
+}
+
+th {
+  background-color: #2e2116;
+  color: #f4ecdd;
+}
+
+/* ----- Album cards: 3 per row ----- */
+.albums {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.album {
+  padding: 20px;
+  background-color: #fffaf1;
+  border: 2px solid #2e2116;
+  box-shadow: 5px 5px 0 #a4622d;
+}
+
+/* Center the last card when it is alone on its row */
+.album:last-child:nth-child(3n + 1) {
+  grid-column: 2;
+}
+
+.album h3 {
+  margin: 5px 0;
+}
+/* Album cover on top of each card */
+.album img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #2e2116;
+}
+.year {
+  margin: 0;
+  font-weight: bold;
+  color: #a4622d;
+}
+
+/* Gallery like polaroid photos */
+.gallery figure {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery figcaption {
+  text-align: center;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .albums {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .album:last-child:nth-child(3n + 1) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .albums {
+    grid-template-columns: 1fr;
+  }
+  
+  .album:last-child:nth-child(3n + 1) {
+    grid-column: auto;
+    width: auto;
+  }
+}
