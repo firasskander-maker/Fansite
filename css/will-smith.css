@@ -46,5 +46,9 @@ th {
 }
 
 .gallery img {
-  border: 6px solid #000000;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4;
+  object-fit: cover;
+  border: 3px solid #ece6d6;
 }
