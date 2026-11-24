@@ -1,0 +1,92 @@
+/* =========================================
+   ronaldo.css
+   Football theme: the colors of Brazil.
+   ========================================= */
+
+body {
+  background-color: #f3f7f4;
+  color: #0d1b2a;
+}
+
+header,
+.sub-nav,
+footer {
+  background-color: #002776;
+  color: #ffffff;
+}
+
+header a,
+.sub-nav a,
+footer a {
+  color: #ffffff;
+}
+
+header .logo,
+footer h3,
+nav .active {
+  color: #ffdf00;
+}
+
+/* Big green and yellow title */
+.hero {
+  background-color: #009c3b;
+}
+
+.hero h1 {
+  color: #ffdf00;
+  text-transform: uppercase;
+}
+
+.hero p {
+  color: #ffffff;
+}
+
+h2,
+h3 {
+  color: #002776;
+  text-transform: uppercase;
+}
+
+.facts {
+  background-color: #ffffff;
+  border-top: 6px solid #009c3b;
+}
+
+th {
+  background-color: #002776;
+  color: #ffffff;
+}
+
+/* ----- Key figures: 4 boxes ----- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stats p {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #002776;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.stats strong {
+  display: block;
+  font-size: 40px;
+  color: #ffdf00;
+}
+
+.gallery img {
+  border-bottom: 5px solid #009c3b;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
