@@ -1,0 +1,38 @@
+/* Style CSS de Will Smith */
+
+body {
+  background-color: #0b0b0b;
+  color: #ece6d6;
+}
+
+header,
+.sub-nav,
+footer {
+  background-color: #000000;
+}
+
+a {
+  color: #ece6d6;
+}
+
+.logo,
+h1,
+h2,
+h3,
+.active {
+  color: #d4af37;
+  font-family: Arial, serif;
+}
+
+.facts {
+  border: 1px solid #d4af37;
+}
+
+th {
+  background-color: #d4af37;
+  color: #000000;
+}
+
+.gallery img {
+  border: 6px solid #000000;
+}
