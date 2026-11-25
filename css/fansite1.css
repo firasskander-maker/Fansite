@@ -1,0 +1,131 @@
+/* Style CSS de Will Smith */
+
+body {
+  background-color: #0b0b0b;
+  color: #ece6d6;
+}
+
+header,
+.sub-nav,
+footer {
+  background-color: #000000;
+}
+
+a {
+  color: #ece6d6;
+}
+
+.logo,
+h1,
+h2,
+h3,
+.active {
+  color: #d4af37;
+  font-family: Arial, serif;
+}
+
+.bio-image {
+  margin: 0 0 30px;
+}
+
+.bio-image img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.contact-container {
+  max-width: 850px;
+}
+
+.contact-section {
+  margin-bottom: 40px;
+}
+
+.contact-section h2 {
+  border-bottom: 1px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+.contact-section a:hover {
+  color: #d4af37;
+}
+
+.facts {
+  border: 1px solid #d4af37;
+}
+
+th {
+  background-color: #d4af37;
+  color: #000000;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4;
+  object-fit: cover;
+  border: 3px solid #ece6d6;
+}
+
+.project {
+  margin-bottom: 25px;
+}
+
+.project h3 {
+  margin-bottom: 8px;
+}
+
+.newsletter {
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.newsletter-form {
+  max-width: 550px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  padding: 12px;
+  border: 1px solid #999999;
+  border-radius: 12px;
+}
+
+.consent {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.consent label {
+  margin: 0;
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  background-color: #d4af37;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    padding: 15px;
+  }
+}
