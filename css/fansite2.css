@@ -59,6 +59,13 @@ th {
   box-shadow: 5px 5px 0 #a4622d;
 }
 
+.portrait {
+  padding: 4px;
+  background-color: #fffaf1;
+  border: 2px solid #2e2116;
+  box-shadow: 6px 6px 0 #a4622d;
+}
+
 /* Center the last card when it is alone on its row */
 .album:last-child:nth-child(3n + 1) {
   grid-column: 2;
@@ -115,4 +122,22 @@ th {
     grid-column: auto;
     width: auto;
   }
+}
+
+.scissor-cutout {
+width: 280px;
+padding: 10px;
+background: #ffffff; /* White paper edge */
+box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.25);
+transform: rotate(-2deg);
+/* Irregular scissor-cut polygon shape */
+clip-path: polygon(
+2% 4%, 96% 0%, 100% 95%, 4% 100%
+);
+}
+
+.scissor-cutout img {
+display: block;
+width: 100%;
+height: auto;
 }
