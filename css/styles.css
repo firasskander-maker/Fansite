@@ -48,7 +48,6 @@ header a:hover {
   text-decoration: underline;
 }
 
-/* Lien vers la page d'accueil */
 .active {
   font-weight: bold;
   border-bottom: 2px solid;
