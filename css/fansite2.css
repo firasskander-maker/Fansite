@@ -1,5 +1,5 @@
 /* =========================================
-   j-cole.css
+   fansite2.css
    Music theme: cream and brown, like a notebook.
    ========================================= */
 
@@ -37,11 +37,6 @@ nav .active {
 
 .facts {
   border: 2px dashed #7a6450;
-}
-
-th {
-  background-color: #2e2116;
-  color: #f4ecdd;
 }
 
 /* ----- Album cards: 3 per row ----- */
@@ -105,7 +100,7 @@ th {
   .albums {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .album:last-child:nth-child(3n + 1) {
     grid-column: 1 / -1;
     justify-self: center;
@@ -117,27 +112,9 @@ th {
   .albums {
     grid-template-columns: 1fr;
   }
-  
+
   .album:last-child:nth-child(3n + 1) {
     grid-column: auto;
     width: auto;
   }
-}
-
-.scissor-cutout {
-width: 280px;
-padding: 10px;
-background: #ffffff; /* White paper edge */
-box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.25);
-transform: rotate(-2deg);
-/* Irregular scissor-cut polygon shape */
-clip-path: polygon(
-2% 4%, 96% 0%, 100% 95%, 4% 100%
-);
-}
-
-.scissor-cutout img {
-display: block;
-width: 100%;
-height: auto;
 }
