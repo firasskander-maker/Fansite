@@ -79,7 +79,6 @@ header a:hover {
   margin: 0;
 }
 
-/* Contenu sur les pages discography.html, achievements.html et filmography.html */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -106,7 +105,6 @@ header a:hover {
   padding-left: 20px;
 }
 
-/* Listes sur les pages discography.html, achievements.html et filmography.html */
 .list {
   padding-left: 20px;
 }
